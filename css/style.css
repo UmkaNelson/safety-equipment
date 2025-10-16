@@ -369,7 +369,7 @@ body {
 }
 
 .fillcard--fill {
-    background: #bbff4c;
+    background: #66b3ea;
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -430,7 +430,7 @@ body {
     font-size: 1.5rem;
     padding: 0.5rem;
     border-radius: 8px;
-    background: #bbff4c;
+    background: #66b3ea;
     color: #1a1a1a;
     min-width: 40px;
     text-align: center;
@@ -453,7 +453,7 @@ body {
 }
 
 .contact-details a:hover {
-    color: #bbff4c;
+    color: #66b3ea;
 }
 
 /* Footer */
@@ -497,7 +497,7 @@ body {
 }
 
 .footer__contacts a:hover {
-    color: #bbff4c;
+    color: #66b3ea;
 }
 
 .footer__legal {
@@ -793,7 +793,7 @@ body {
 .service-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-color: #bbff4c;
+    border-color: #66b3ea;
 }
 
 .service-item__icon {
@@ -816,7 +816,7 @@ body {
 
 .service-item__badge {
     display: inline-block;
-    background: #bbff4c;
+    background: #66b3ea;
     color: #1a1a1a;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -838,7 +838,7 @@ body {
     color: #1a1a1a;
     font-weight: 600;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #bbff4c;
+    border-bottom: 2px solid #66b3ea;
 }
 
 .services-list {
@@ -864,7 +864,7 @@ body {
     content: '•';
     position: absolute;
     left: 0;
-    color: #bbff4c;
+    color: #66b3ea;
     font-weight: bold;
 }
 
