@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Производство товаров охраны труда: стенды, журналы и другие средства безопасности">
+    <title>ОхранаТруд - Производство товаров охраны труда</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="navbar__brand">
+                <a href="#" class="navbar__logo">ОхранаТруд</a>
+            </div>
+            
+            <ul class="navbar__menu" id="navbar-menu">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link active" data-section="home">Главная</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__link" data-section="services">Услуги</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#reviews" class="navbar__link" data-section="reviews">Отзывы</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contacts" class="navbar__link" data-section="contacts">Контакты</a>
+                </li>
+            </ul>
+            
+            <div class="navbar__controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Переключить тему">
+                    <img src="./assets/icon/icon/icon-sun.png" alt="Светлая тема" class="theme-icon theme-icon-sun">
+                    <img src="./assets/icon/icon/icon-moon.png" alt="Темная тема" class="theme-icon theme-icon-moon">
+                </button>
+            </div>
+            
+            <div class="navbar__toggler" id="navbar-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <!-- Герой секция -->
+        <section class="hero" id="home">
+            <div class="hero__content container">
+                <h1 class="hero__title">
+                    Производство <strong>товаров охраны труда</strong>
+                </h1>
+                <p class="hero__description">
+                    Стенды, журналы, плакаты и другие средства для обеспечения безопасности на рабочем месте
+                </p>
+                <div class="hero__actions">
+                    <a href="#services" class="btn btn--primary">
+                        <span class="btn--point">
+                            <span></span>
+                            <svg viewBox="0 0 28 28" fill="none">
+                                <path d="M5 14H23M23 14L16 7M23 14L16 21"/>
+                            </svg>
+                        </span>
+                        <span class="btn--text">Наши услуги</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция услуг -->
+        <section class="section services" id="services">
+            <div class="container">
+                <h2 class="section__title">Наши услуги</h2>
+                
+                <div class="services-tabs">
+                    <div class="services-tabs__nav">
+                        <button class="services-tab active" data-tab="development">Разработка по образцу</button>
+                        <button class="services-tab" data-tab="journals">Журналы</button>
+                        <button class="services-tab" data-tab="stands">Стенды</button>
+                        <button class="services-tab" data-tab="posters">Плакаты</button>
+                        <button class="services-tab" data-tab="forms">Бланки по охране труда</button>
+                    </div>
+                    
+                    <div class="services-tabs__content">
+                        <!-- Вкладка "Разработка по образцу" -->
+                        <div class="services-tab-pane active" id="development">
+                            <div class="services-category">
+                                <h3 class="services-category__title">Разработка и изготовление по Вашему образцу</h3>
+                                <div class="services-grid">
+                                    <div class="service-item">
+                                        <div class="service-item__icon">📋</div>
+                                        <h4 class="service-item__title">Журналы по образцу</h4>
+                                        <p class="service-item__description">Разработка и изготовление журнала по Вашему образцу</p>
+                                        <span class="service-item__badge">Под заказ</span>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🛡️</div>
+                                        <h4 class="service-item__title">Знаки по образцу</h4>
+                                        <p class="service-item__description">Разработка и изготовление знаков по Вашему образцу</p>
+                                        <span class="service-item__badge">Под заказ</span>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">📊</div>
+                                        <h4 class="service-item__title">Стенды по образцу</h4>
+                                        <p class="service-item__description">Разработка и изготовление стенда по Вашему образцу</p>
+                                        <span class="service-item__badge">Под заказ</span>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">📐</div>
+                                        <h4 class="service-item__title">Схемы строповки</h4>
+                                        <p class="service-item__description">Разработка и изготовление схемы строповки по Вашему образцу</p>
+                                        <span class="service-item__badge">Под заказ</span>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🆔</div>
+                                        <h4 class="service-item__title">Удостоверения</h4>
+                                        <p class="service-item__description">Разработка и изготовление удостоверений по Вашему образцу</p>
+                                        <span class="service-item__badge">Под заказ</span>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🗺️</div>
+                                        <h4 class="service-item__title">Схемы движения</h4>
+                                        <p class="service-item__description">Схема движения по территории</p>
+                                        <span class="service-item__badge">Под заказ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Вкладка "Журналы" -->
+                        <div class="services-tab-pane" id="journals">
+                            <div class="services-category">
+                                <h3 class="services-category__title">Журналы</h3>
+                                <div class="services-columns">
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Основные категории</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Комплекты журналов</li>
+                                            <li class="services-list__item">Журналы для всех организаций</li>
+                                            <li class="services-list__item">Журналы для строительных организаций</li>
+                                            <li class="services-list__item">Журналы для организаций общественного питания</li>
+                                            <li class="services-list__item">Канцелярские товары для журналов</li>
+                                            <li class="services-list__item">Журналы по электробезопасности</li>
+                                            <li class="services-list__item">Журналы по виду деятельности</li>
+                                            <li class="services-list__item">Журналы по ГО, ЧС и антитеррористической защищенности</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Специализированные журналы</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Журналы по безопасности дорожного движения (БДД)</li>
+                                            <li class="services-list__item">Медицинские журналы</li>
+                                            <li class="services-list__item">Журналы для кадрового делопроизводства</li>
+                                            <li class="services-list__item">Журналы для охранной деятельности</li>
+                                            <li class="services-list__item">Бухгалтерские журналы</li>
+                                            <li class="services-list__item">Журналы для тепловых энергоустановок</li>
+                                            <li class="services-list__item">Журналы для ЖД транспорта</li>
+                                            <li class="services-list__item">Журналы для СЭС</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Отраслевые журналы</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Журналы для предприятий торговли</li>
+                                            <li class="services-list__item">Журналы для промышленных предприятий</li>
+                                            <li class="services-list__item">Журналы для газовой отрасли</li>
+                                            <li class="services-list__item">Журналы для АЗС и АЗГС</li>
+                                            <li class="services-list__item">Журналы для сельского хозяйства</li>
+                                            <li class="services-list__item">Журналы по экологии</li>
+                                            <li class="services-list__item">Журналы для образовательных учреждений</li>
+                                            <li class="services-list__item">Журналы для таможенной службы</li>
+                                            <li class="services-list__item">Журналы для вооруженных сил</li>
+                                            <li class="services-list__item">Журналы для детских садов</li>
+                                            <li class="services-list__item">Журналы по виноделию</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Вкладка "Стенды" -->
+                        <div class="services-tab-pane" id="stands">
+                            <div class="services-category">
+                                <h3 class="services-category__title">Стенды</h3>
+                                <div class="services-columns">
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Основные категории</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Стенды по охране труда</li>
+                                            <li class="services-list__item">Стенды по пожарной безопасности</li>
+                                            <li class="services-list__item">Антитеррористическая безопасность</li>
+                                            <li class="services-list__item">Стенды по гражданской обороне и ЧС</li>
+                                            <li class="services-list__item">Стенды по оказанию первой медицинской помощи</li>
+                                            <li class="services-list__item">Стенды для общественного питания</li>
+                                            <li class="services-list__item">Стенды по электробезопасности</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Специализированные стенды</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Стенды по безопасности в строительстве</li>
+                                            <li class="services-list__item">Стенды по технике безопасности на производстве</li>
+                                            <li class="services-list__item">Стенды для газового хозяйства</li>
+                                            <li class="services-list__item">Стенды для машин, механизмов, инструмента</li>
+                                            <li class="services-list__item">Стенды для сварочных работ</li>
+                                            <li class="services-list__item">Стенды для сосудов под давлением</li>
+                                            <li class="services-list__item">Стенды по технике безопасности на транспорте</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Дополнительные категории</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Стенды по экологии и охране окружающей среды</li>
+                                            <li class="services-list__item">Безопасность на воде и в аквапарке</li>
+                                            <li class="services-list__item">Стенды для образовательных учреждений</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Вкладка "Плакаты" -->
+                        <div class="services-tab-pane" id="posters">
+                            <div class="services-category">
+                                <h3 class="services-category__title">Плакаты</h3>
+                                <div class="services-grid">
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🦠</div>
+                                        <h4 class="service-item__title">COVID-19</h4>
+                                        <p class="service-item__description">Информационные плакаты по профилактике COVID-19</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">👷</div>
+                                        <h4 class="service-item__title">Охрана труда</h4>
+                                        <p class="service-item__description">Плакаты по технике безопасности и охране труда</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🔥</div>
+                                        <h4 class="service-item__title">Пожарная безопасность</h4>
+                                        <p class="service-item__description">Плакаты по противопожарной безопасности</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🏗️</div>
+                                        <h4 class="service-item__title">Безопасность в строительстве</h4>
+                                        <p class="service-item__description">Плакаты для строительных площадок и объектов</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🚗</div>
+                                        <h4 class="service-item__title">Безопасность на автотранспорте</h4>
+                                        <p class="service-item__description">Плакаты по безопасности дорожного движения</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">⚡</div>
+                                        <h4 class="service-item__title">Электробезопасность</h4>
+                                        <p class="service-item__description">Плакаты по электробезопасности и предупреждению поражения током</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🛡️</div>
+                                        <h4 class="service-item__title">ГО, ЧС, Антитеррористическая безопасность</h4>
+                                        <p class="service-item__description">Плакаты по гражданской обороне и антитеррористической защите</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🍽️</div>
+                                        <h4 class="service-item__title">Общественное питание</h4>
+                                        <p class="service-item__description">Плакаты для предприятий общественного питания</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🔧</div>
+                                        <h4 class="service-item__title">Сварочное производство</h4>
+                                        <p class="service-item__description">Плакаты по безопасности сварочных работ</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">🛢️</div>
+                                        <h4 class="service-item__title">Нефть и нефтепродукты</h4>
+                                        <p class="service-item__description">Плакаты для нефтяной промышленности</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">📢</div>
+                                        <h4 class="service-item__title">Агитационные</h4>
+                                        <p class="service-item__description">Агитационные и информационные плакаты</p>
+                                    </div>
+                                    
+                                    <div class="service-item">
+                                        <div class="service-item__icon">💧</div>
+                                        <h4 class="service-item__title">Безопасность на воде</h4>
+                                        <p class="service-item__description">Плакаты по безопасности на воде и в аквапарках</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Вкладка "Бланки по охране труда" -->
+                        <div class="services-tab-pane" id="forms">
+                            <div class="services-category">
+                                <h3 class="services-category__title">Бланки по охране труда</h3>
+                                <div class="services-columns">
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Основные категории</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Бланки для транспорта</li>
+                                            <li class="services-list__item">Бланки по охране труда</li>
+                                            <li class="services-list__item">Бланки по электробезопасности</li>
+                                            <li class="services-list__item">Бланки по промышленной безопасности</li>
+                                            <li class="services-list__item">Бланки по пожарной безопасности</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Административные бланки</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Бланки по делопроизводству</li>
+                                            <li class="services-list__item">Бланки для кадровой работы</li>
+                                            <li class="services-list__item">Бланки для бухгалтерского учета</li>
+                                            <li class="services-list__item">Медицинские бланки</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="services-column">
+                                        <h4 class="services-column__title">Специализированные бланки</h4>
+                                        <ul class="services-list">
+                                            <li class="services-list__item">Бланки по виноделию</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция отзывов -->
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <h2 class="section__title">Отзывы клиентов</h2>
+                <div class="reviews__content">
+                    <p class="reviews__placeholder">Здесь будут отзывы наших клиентов</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция контактов -->
+        <section class="section contacts dark-section" id="contacts">
+            <div class="container">
+                <h2 class="section__title">Контакты</h2>
+                <div class="contacts__content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Телефон</h3>
+                                <p><a href="tel:+79996502799">+7 (999) 650-27-99</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:umkanelson@mail.ru">umkanelson@mail.ru</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h3>Время работы</h3>
+                                <p>Пн-Пт: 9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2025 ОхранаТруд. Все права защищены.</p>
+                    <div class="footer__contacts">
+                        <p>Телефон: <a href="tel:+79996502799">+7 (999) 650-27-99</a></p>
+                        <p>Email: <a href="mailto:umkanelson@mail.ru">umkanelson@mail.ru</a></p>
+                    </div>
+                </div>
+                <div class="footer__legal">
+                    <p class="footer__text">
+                        Внимание: все материалы и статьи, размещенные на данном сайте, 
+                        являются интеллектуальной собственностью правообладателя. Полное или частичное 
+                        копирование запрещено.
+                    </p>
+                    <p class="footer__text">
+                        Информация на сайте носит ознакомительный характер и не является публичной офертой.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
